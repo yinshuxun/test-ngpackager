@@ -1,10 +1,16 @@
 /* To learn more about this file see: https://angular.io/config/tsconfig. */
 {
-  "extends": "./tsconfig.lib.json",
   "compilerOptions": {
-    "declarationMap": false
+    "esModuleInterop": true,
+    "lib": ["ESNext"],
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "target": "ES2015",
   },
   "angularCompilerOptions": {
-    "compilationMode": "partial",
+    "enableIvy": false,
+    "fullTemplateTypeCheck": true,
   }
 }

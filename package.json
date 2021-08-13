@@ -4,14 +4,12 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng-packagr -c projects/my-lib/tsconfig.lib.prod.json -p projects/my-lib/ng-package.json",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
   "private": true,
   "devDependencies": {
-    "@1stg/app-config": "^2.2.1",
-    "@1stg/tslint-config": "^2.0.0",
     "@alauda/code-editor": "^3.0.0",
     "@alauda/common-snippet": "^3.0.0",
     "@alauda/ui": "^5.6.6",
